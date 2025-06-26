@@ -8,6 +8,7 @@ layout: intro
 introImage: "/gameday.png"
 ---
 
+
 # AWS GameDay
 
 Zabawne, grywalizowane i interaktywne doświadczenie edukacyjne.
@@ -15,6 +16,7 @@ Zabawne, grywalizowane i interaktywne doświadczenie edukacyjne.
 ---
 
 # Czym jest AWS GameDay?
+<v-clicks>
 
 - 🎮 **Grywalizowane Wydarzenie Edukacyjne** - wyzwania dla uczestników do wykorzystania rozwiązań AWS w rozwiązywaniu prawdziwych problemów technicznych w zespołach
 - 🚀 **Praktyczne Doświadczenie** - w pełni praktyczna możliwość dla specjalistów technicznych do eksploracji usług AWS, wzorców architektury i najlepszych praktyk
@@ -23,6 +25,8 @@ Zabawne, grywalizowane i interaktywne doświadczenie edukacyjne.
 - 👥 **Współpraca Zespołowa** - wspieranie budowania zespołu i współpracy podczas wspólnego rozwiązywania wyzwań
 - 🎯 **Rzeczywiste Scenariusze** - prezentacja usług AWS przy użyciu realistycznych scenariuszy technicznych i działającej infrastruktury AWS
 - 🏆 **Element Konkurencyjny** - zespoły rywalizują na tablicach wyników w czasie rzeczywistym podczas nauki i rozwiązywania wyzwań
+
+</v-clicks>
 
 <style>
 h1 {
@@ -77,7 +81,6 @@ Dostaliśmy szybki wstęp o tym jak to będzie wyglądało
 
 ---
 layout: table-contents
-gradientColors: ['#8EC5FC', '#E0C3FC']
 ---
 
 # Przejście do własenego pokoju oraz rozpoczęcie zabawy
@@ -87,8 +90,12 @@ gradientColors: ['#8EC5FC', '#E0C3FC']
 Kiedy juz wszystko było wyjaśnione i upewniliśmy się, ze mamy dostep do konsoli oraz specjalnej platformy z zadaniami (Apka wyklepana i postawiona na cloudfront)
 
 ---
+layout: new-section
+---
 
 # Zadanie 1 - PartyRock
+
+---
 
 ## Czym jest PartyRock?
 
@@ -110,533 +117,206 @@ Kiedy juz wszystko było wyjaśnione i upewniliśmy się, ze mamy dostep do kons
 </div>
 
 <div v-after>
-  <img class="w-150 absolute top-43" src="./partyrock.png" />
+  <img class="w-150 absolute top-43" src="/partyrock.png" />
 </div>
 
 ---
+layout: new-section
+---
 
-## level: 2
+# Zadanie 2 - Generowanie zdjęć
 
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: "John Doe",
-  books: [
-    "Vue 2 - Advanced Guide",
-    "Vue 3 - Basic Guide",
-    "Vue 4 - The Mystery",
-  ],
-});
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: "John Doe",
-        books: [
-          "Vue 2 - Advanced Guide",
-          "Vue 3 - Basic Guide",
-          "Vue 4 - The Mystery",
-        ],
-      },
-    };
-  },
-};
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: "John Doe",
-      books: [
-        "Vue 2 - Advanced Guide",
-        "Vue 3 - Basic Guide",
-        "Vue 4 - The Mystery",
-      ],
-    },
-  }),
-};
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: "John Doe",
-  books: [
-    "Vue 2 - Advanced Guide",
-    "Vue 3 - Basic Guide",
-    "Vue 4 - The Mystery",
-  ],
-};
-</script>
-```
-````
+<style>
+h1 {
+  text-align: center;
+}
+</style>
 
 ---
 
-# Components
+<div class="absolute top-20">
 
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-
-## class: px-20
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
+# Aplikacja do generowania zdjęć w python
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
+<div class="absolute top-40" v-click.hide>
 
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
+Kolejnym zadaniem było stworzenie prostej aplikacji webowej do gen.
+- Napisać prompty, które będą generowały fajne obrazki
+- Oceniana była jakoś generowanych obrazków w zaleznosci od prompt
 
 </div>
 
-<br>
+<div v-after>
+  <img class="w-150 absolute top-40" src="/bedrock.png" />
+</div>
+
+
+---
+
+# Ale jak to aplikacja webowa w python?
 
 <v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
+<img class="w-150" src="/streamlit.png" />
 </v-click>
 
-<div mt-20 v-click>
+---
+layout: cover-logos
+logos: [
+  'https://www.opc-router.de/wp-content/uploads/2023/07/Docker_150x150px-01-01-01.png',
+  'https://miro.medium.com/v2/resize:fit:908/1*w4N8NNxnCo-qhADUe5BsGQ.png',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5s_irQVmNTxnN1YKjl170xsJCJg1YJys2BQ&s',
+]
+---
 
-[Learn more](https://sli.dev/guide/animations#click-animation)
+# Postawienie aplikacji
 
+- Po zbudowaniu działającej aplikacji lokalnie trzeba było postawic kontener 
+- Wypchnąć kontener na ECR
+- Postawić apkę przy uzyciu ECS 
+- Gotowy link do apki wrzucić do oceny
+
+
+---
+layout: new-section
+---
+
+# Zadanie 3 - Analiza rozmowy
+
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+
+
+---
+
+<div class="absolute top-20">
+
+# Analiza rozmowy z konsultantem
+
+</div>
+
+
+<div class="absolute top-40" v-click.hide>
+
+- Rozmowy są przechowywane w formacie WAV na S3
+- Trzeba stworzyć transkrypcje tej rozmowy i wyciągnąć metadane
+
+</div>
+
+<div v-after>
+  <img class="w-150 absolute top-43" src="/amazon-transcribe.png" />
 </div>
 
 ---
 
-# Motions
+# Stowrzenie prompta do analizy transkrycpji
+<br />
+Po stworzeniu transkrypcji nalezalo przejsc do bedrock studio i pokminc jak dobrze napisac prompta zeby moc mu zadawac pytania o rozmowe i zeby odpowiadal dobrze i nie wymyslal odpowiedzi i danych ktorych tam nie bylo
+<br />
+<br />
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
+- Tutaj była ręczna walidacja tego czyli po testach dostawaliśmy pytania, na które sami musieliśmy odpowiedzieć uzywajac właśnie przygotowanego wcześniej AI
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
 
 ---
-
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-
-$$
-{1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
+layout: image-right
+image: ./guardrails.png
+class: mt-35
 ---
 
-# Diagrams
+# Anonimizacja danych
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+- Rozmowy z konsultantami zawierały wrazliwe dane takiej jak imie, nazwisko, adres, numer telefonu 
 
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+- Przed zafeedowaniem do AI mieliśmy za zadanie pozbyć się tych danych z uwagi na to, ze nie byly nam potrzebne do analizy 
 
 ---
-
-foo: bar
-dragPos:
-square: 691,32,167,\_,-16
-
+layout: image-right
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/1200px-Amazon_Lambda_architecture_logo.svg.png"
+class: mt-40
 ---
 
-dragPos:
-square: 0,-15,0,0
+# Spięcie tego wszystkie w całość
+
+Ostatecznie trzeba było połączyć wszystkie te kroki razem za pomocą lambdy
 
 ---
-
-dragPos:
-square: 0,-535,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-
-dragPos:
-square: 0,-61,0,0
-
----
-dragPos:
-  square: 0,-61,0,0
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-
-src: ./pages/imported-slides.md
-hide: false
-
----
-
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from "vue";
-import { emptyArray } from "./external";
-
-const arr = ref(emptyArray(10));
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from "vue";
-import { emptyArray, sayHello } from "./external";
-
-sayHello();
-console.log(`vue ${version}`);
-console.log(
-  emptyArray<number>(10).reduce(
-    (fib) => [...fib, fib.at(-1)! + fib.at(-2)!],
-    [1, 1]
-  )
-);
-```
-
----
-
 layout: center
-class: text-center
+---
+# Inicjacja i Transkrypcja
+
+```mermaid {theme: 'neutral', scale: 0.5}
+graph LR
+    A[System]
+    B(S3 Bucket <br> 'raw-audio')
+    C{Lambda #1 <br> 'start-transcription'}
+    D[AWS Transcribe]
+    E(S3 Bucket <br> 'transcriptions')
+    F[Kolejny diagram na następnym slide]
+
+    subgraph "Etap 1 i 2"
+        blank1[ ]
+        A -- Upload pliku .wav --> B -- s3:ObjectCreated --> C -- Uruchom zadanie --> D -- Zapisz wynik .json --> E;
+    end
+
+    E --> F;
+    
+    linkStyle 4 stroke-width:0px, stroke:transparent;
+    linkStyle 0 stroke-width:0px, stroke:transparent;
+
+    style B fill:#FF9900,stroke:#333
+    style E fill:#FF9900,stroke:#333
+    style C fill:#FF4F00,stroke:#333
+    style blank1 display:none; 
+```
 
 ---
+layout: center
+---
 
-# Learn More
+# Analiza, AI i Zapis
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+```mermaid {theme: 'neutral', scale: 0.5}
+graph LR
+    F{Lambda #2 <br> 'analyze-transcription'}
+    G[Amazon Bedrock Guardrails]
+    I((Zapisz log / Kwarantanna))
+    J[Amazon Bedrock <br> Model LLM]
+    K[(Baza Danych / S3 <br> 'analysis-results')]
+
+    subgraph "Etap 3 i 4"
+        F -- Wyślij tekst --> G;
+        G -- "Treść OK" --> J;
+        G -- "Treść Zablokowana" --> I;
+        J -- Wynik analizy --> F;
+        F -- Zapisz ostateczny wynik --> K;
+    end
+    
+    linkStyle 4 stroke-width:0px, stroke:transparent;
+
+    style F fill:#FF4F00,stroke:#333
+    style G fill:#00A1F1,stroke:#333
+    style J fill:#00A1F1,stroke:#333
+    style I fill:#D81B1B,stroke:#333,color:#fff
+```
+
+---
+layout: image-center
+image: ./result.jpeg
+imageWidth: '450'
+imageHeight: '950'
+---
+
+# Wynik
+
+---
+layout: center
+---
+
+# Thank you!
 
 <PoweredBySlidev mt-10 />
